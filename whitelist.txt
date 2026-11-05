@@ -1,0 +1,4 @@
+# Adiciona aqui domínios que nunca queres bloquear (um por linha).
+# Um domínio também protege todos os seus subdomínios.
+# exemplo.pt
+# servico-local.lan

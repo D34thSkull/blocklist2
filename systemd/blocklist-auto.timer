@@ -1,0 +1,10 @@
+[Unit]
+Description=Executa blocklist-auto diariamente à meia-noite
+
+[Timer]
+OnCalendar=*-*-* 00:00:00
+Persistent=true
+Unit=blocklist-auto.service
+
+[Install]
+WantedBy=timers.target

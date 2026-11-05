@@ -1,0 +1,10 @@
+[Unit]
+Description=Atualização automática de blocklists para AdGuard
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=oneshot
+WorkingDirectory=/opt/blocklist-auto
+ExecStart=/usr/bin/python3 /opt/blocklist-auto/blocklist.py
+User=root

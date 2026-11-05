@@ -1,0 +1,3 @@
+__pycache__/
+*.py[cod]
+blocklist_optimized.txt
