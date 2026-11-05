@@ -1,1 +1,41 @@
+name: Atualizar Blocklist Diariamente
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-blocklist
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descarregar código do repositório
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Executar script de otimização
+        run: python3 blocklist.py
+
+      - name: Guardar alterações no repositório
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add blocklist_optimized.txt
+          if git diff --cached --quiet; then
+            echo "A blocklist não mudou; nada para guardar."
+          else
+            git commit -m "Auto: Atualizar blocklist otimizada [skip ci]"
+            git push
+          fi
 
