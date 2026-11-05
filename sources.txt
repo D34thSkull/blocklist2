@@ -1,2 +1,12 @@
-https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts
-https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt
+https://adguardteam.github.io/HostlistsRegistry/assets/filter_51.txt
+https://adguardteam.github.io/HostlistsRegistry/assets/filter_5.txt
+https://adguardteam.github.io/HostlistsRegistry/assets/filter_61.txt
+https://adguardteam.github.io/HostlistsRegistry/assets/filter_63.txt
+https://adguardteam.github.io/HostlistsRegistry/assets/filter_60.txt
+https://adguardteam.github.io/HostlistsRegistry/assets/filter_7.txt
+https://adguardteam.github.io/HostlistsRegistry/assets/filter_8.txt
+https://adguardteam.github.io/HostlistsRegistry/assets/filter_18.txt
+https://adguardteam.github.io/HostlistsRegistry/assets/filter_10.txt
+https://adguardteam.github.io/HostlistsRegistry/assets/filter_9.txt
+https://adguardteam.github.io/HostlistsRegistry/assets/filter_11.txt
+# Podes adicionar URLs de outras listas que uses ou alterar as que estão já adicionadas
